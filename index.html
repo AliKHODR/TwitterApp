@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Twitter</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="touiteur">Touiteur</h1>
+        </div>
+    </header>
+
+    <!--my form-->
+    <section class="form">
+        <div class="container">
+            <form id="my-form" class="msg-form">
+                <label for="name" class="name">
+                    <span>Pseudo</span>
+                    <input type="text" id="name">
+                </label>
+                <label for="message" class="message">
+                    <span>message</span>
+                    <input type="text" id="message">
+                </label>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!--top like & trends & influncers-->
+    <section class="trending">
+        <div class="container">
+            <article class="top-like">
+                <h2>le touit le plus aimé</h2>
+            </article>
+            <article class="trends">
+                <h2>les Tendances</h2>
+            </article>
+            <article class="influencers">
+                <h2>les influenceurs</h2>
+                <div>
+                    <label for="checkbox" class="switch" >
+                        <input type="checkbox" id="checkbox">
+                        <span class="slider round"  title="Highlight influencers' posts"></span>
+                    </label>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--tweets-->
+    <section class="tweets">
+            <h2>Les touites</h2>
+        <div class="container" id="container">
+
+            <!-- The Modal -->
+            <div id="myModal" class="my-modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Les comments..</h3>
+                <div class="comments">
+
+                </div>
+                <label for="comment-pseudo" id="label">
+                    <span>Pseudo</span>
+                    <input type="text" id="comment-pseudo">
+                </label>
+                <label for="comment-message">
+                    <span>Commentaire</span>
+                    <input type="text" id="comment-message">
+                </label>
+                <button>Comment</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app2.js"></script>
+</body>
+
+</html>
